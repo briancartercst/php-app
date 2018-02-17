@@ -1,15 +1,16 @@
 version: '2'
 services:
   nginx:
-    image: shippingdocker/nginx:latest
+    image: chipsofttech/nginx:latest
     ports:
      - "80:80"
+     - "443:443"
     volumes:
      - ./application:/var/www/html
     networks:
      - appnet
   php:
-    image: shippingdocker/php:latest
+    image: chipsofttech/php:latest
     volumes:
      - ./application:/var/www/html
     networks:

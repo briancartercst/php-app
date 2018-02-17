@@ -1,6 +1,6 @@
 # Building Images
 
-This project uses two custom Docker images, hosted at [https://hub.docker.com/r/shippingdocker/](https://hub.docker.com/r/shippingdocker/).
+This project uses two custom Docker images, hosted at [https://hub.docker.com/r/chipsofttech/](https://hub.docker.com/r/chipsofttech/).
 
 These images are built here ahead of time using the `build` bash script found in this directory.
 
@@ -9,7 +9,7 @@ These images are built here ahead of time using the `build` bash script found in
 The TL;DR usage of the `build` script is:
 
 ```bash
-# Log into the shippingdocker Docker Hub user
+# Log into the chipsofttech Docker Hub user
 $ docker login
 
 # Build a new version
@@ -18,9 +18,9 @@ $ ./build 1.1
 
 ## Explanation
 
-This build script pushes up to the `shippingdocker` repository, so only I can actually push to it.
+This build script pushes up to the `chipsofttech` repository, so only I can actually push to it.
 
-However it's useful to see how you might use it to build your own images (simply replace the `shippingdocker` namespace with your own).
+However it's useful to see how you might use it to build your own images (simply replace the `chipsofttech` namespace with your own).
 
 Let's see an example, with comments to explain what we're doing:
 

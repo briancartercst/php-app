@@ -1,10 +1,10 @@
 # Containerized PHP Application
 
-<a href="https://shippingdocker.com" title="learn how to use docker in dev and production">![Shipping Docker video series](https://cloud.githubusercontent.com/assets/467411/18037593/12321512-6d4e-11e6-8514-e8454f4fd286.jpg)</a>
+<a href="https://chipsofttech.com" title="learn how to use docker in dev and production">![Shipping Docker video series](https://cloud.githubusercontent.com/assets/467411/18037593/12321512-6d4e-11e6-8514-e8454f4fd286.jpg)</a>
 
 ## What is this?
 
-This is an example of how you can quickly get up and running with Docker to develop a PHP application. This is a companion to the 🐳 [Shipping Docker](https://shippingdocker.com/) video series.
+This is an example of how you can quickly get up and running with Docker to develop a PHP application. This is a companion to the 🐳 [Shipping Docker](https://chipsofttech.com/) video series.
 
 ## Teach me how to use it!
 
@@ -12,7 +12,7 @@ I have a mini-course that uses this example to show you how to get up and runnin
 
 **Sign up here to get an email with a link to the mini course to see how this works!**
 
-<a href="http://shippingdocker.com/#signup" title="see how to use Docker in development"><img src="https://cloud.githubusercontent.com/assets/467411/18333423/8ef22c66-7534-11e6-950d-850be40d9af0.png" alt="Shipping Docker mini-course" width="600" height="200" style="width: 600px; height: 200px;" /></a>
+<a href="http://chipsofttech.com/#signup" title="see how to use Docker in development"><img src="https://cloud.githubusercontent.com/assets/467411/18333423/8ef22c66-7534-11e6-950d-850be40d9af0.png" alt="Shipping Docker mini-course" width="600" height="200" style="width: 600px; height: 200px;" /></a>
 
 ## How to use
 
@@ -41,14 +41,14 @@ docker run -it --rm \
     -v $(pwd):/opt \
     -w /opt \
     --network=phpapp_appnet \
-    shippingdocker/php \
+    chipsofttech/php \
     composer create-project laravel/laravel application
 
 docker run -it --rm \
     -v $(pwd)/application:/opt \
     -w /opt \
     --network=phpapp_appnet \
-    shippingdocker/php \
+    chipsofttech/php \
     composer require predis/predis
 
 # Restart required to ensure
@@ -97,7 +97,7 @@ docker run -it --rm \
     -v $(pwd)/application:/opt \
     -w /opt \
     --network=phpapp_appnet \
-    shippingdocker/php \
+    chipsofttech/php \
     php artisan make:auth
 
 # Run migrations for auth scaffolding
@@ -105,7 +105,7 @@ docker run -it --rm \
     -v $(pwd)/application:/opt \
     -w /opt \
     --network=phpapp_appnet \
-    shippingdocker/php \
+    chipsofttech/php \
     php artisan migrate
 ```
 
