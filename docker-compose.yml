@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 services:
   nginx:
     image: chipsofttech/nginx:latest
@@ -9,6 +9,7 @@ services:
      - ./application:/var/www/html
     networks:
      - appnet
+    restart: always
   php:
     image: chipsofttech/php:latest
     volumes:
@@ -19,6 +20,7 @@ services:
     image: redis:alpine
     networks:
      - appnet
+    restart: always
   db:
     image: mysql:5.7
     environment:
@@ -30,6 +32,7 @@ services:
      - data:/var/lib/mysql
     networks:
      - appnet
+    restart: always 
 networks:
   appnet:
     driver: "bridge"
