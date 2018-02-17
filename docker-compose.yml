@@ -16,6 +16,7 @@ services:
      - ./application:/var/www/html
     networks:
      - appnet
+    restart: always
   redis:
     image: redis:alpine
     networks:
