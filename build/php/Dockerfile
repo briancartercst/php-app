@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-MAINTAINER Chris Fidao
+MAINTAINER Brian Carter
 
 RUN locale-gen en_US.UTF-8
 
